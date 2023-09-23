@@ -2,6 +2,7 @@
 const route = useRoute();
 const loading = useLoading();
 const messageDialog = useMessageDialog();
+const { toastHelper } = useToast();
 
 const familyName = ref("");
 const firstName = ref("");
@@ -43,8 +44,7 @@ async function register() {
       body: param,
     });
 
-    // モーダル出しすぎるのはよくないがとりあえず
-    await messageDialog.info("登録しました。");
+    toastHelper.info("登録しました。");
     await navigateTo("/user/userList");
   } finally {
     loading.hide();
@@ -71,8 +71,7 @@ async function remove() {
       body: param,
     });
 
-    // モーダル出しすぎるのはよくないがとりあえず
-    await messageDialog.info("削除しました。");
+    toastHelper.info("削除しました。");
     await navigateTo("/user/userList");
   } finally {
     loading.hide();

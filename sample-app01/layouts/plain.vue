@@ -12,6 +12,7 @@ const inert = useInert();
       </div>
       <MessageDialog></MessageDialog>
       <Loading></Loading>
+      <Toast></Toast>
     </Body>
   </Html>
 </template>

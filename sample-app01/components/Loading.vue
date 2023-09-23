@@ -14,7 +14,7 @@ const loading = useLoading();
   background-color: rgba(0, 0, 0, 0.2);
   cursor: wait;
 
-  z-index: 31;
+  z-index: 32;
 
   display: flex;
   justify-content: center;
