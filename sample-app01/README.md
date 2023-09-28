@@ -16,8 +16,8 @@ nuxt3のサンプル
 ## インストール
 
 ```
-npm install bulma pinia @pinia/nuxt @aws-sdk/client-dynamodb @aws-sdk/lib-dynamodb
-npm install -D sass
+npm install bulma pinia @pinia/nuxt @aws-sdk/client-dynamodb @aws-sdk/lib-dynamodb morgan
+npm install -D sass @types/morgan
 ```
 
 ## メモ
